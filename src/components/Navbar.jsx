@@ -76,7 +76,7 @@ const Wrapper = styled.section`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 9999;
     background-color: #fff;

@@ -1,15 +1,15 @@
 import React from 'react';
 import styled from 'styled-components'; // If you are using styled-components
 
-const Button = ({ children, onClick, bgColor, color, fontSize, borderColor, hoverColor }) => {
+const Button = ({ children, onClick, bgcolor, color, fontSize, bordercolor, hovercolor }) => {
     return (
         <StyledButton
             onClick={onClick}
-            bgColor={bgColor}
+            bgcolor={bgcolor}
             color={color}
             fontSize={fontSize}
-            borderColor={borderColor}
-            hoverColor={hoverColor}
+            bordercolor={bordercolor}
+            hovercolor={hovercolor}
         >
             {children}
         </StyledButton>
@@ -17,12 +17,12 @@ const Button = ({ children, onClick, bgColor, color, fontSize, borderColor, hove
 };
 
 const StyledButton = styled.button`
-  width: 40%;
+  width: 100%;
   margin: 10px 0;
   padding: 15px 20px;
-  background-color: ${(props) => props.bgColor || 'blue'};
+  background-color: ${(props) => props.bgcolor || 'blue'};
   color: ${(props) => props.color || 'white'};
-  border: 2px solid ${(props) => props.borderColor || '#82D45B'};
+  border: 2px solid ${(props) => props.bordercolor || '#82D45B'};
   border-radius: 15px;
   font-weight: 600;
   cursor: pointer;
@@ -31,7 +31,7 @@ const StyledButton = styled.button`
   
   &:hover {
     background-color: transparent;
-    color: ${(props) => props.hoverColor || '#82D45B'};
+    color: ${(props) => props.hovercolor || '#82D45B'};
   }
 `;
 
