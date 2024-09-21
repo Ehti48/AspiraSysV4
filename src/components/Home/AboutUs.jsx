@@ -7,35 +7,37 @@ const AboutUs = () => {
     const handleClick = () => {
         alert('clicked')
     }
-  return (
-    <Wrapper>
-      <div className="container">
-        <div className="about-img">
-            <div className="bg-img">
-                <img src="src/assets/png/Rectangle.png" alt="" />
+    return (
+        <Wrapper>
+            <div className="container">
+                <div className="about-img">
+                    <div className="bg-img">
+                        <img src="src/assets/png/Rectangle.png" alt="" />
+                    </div>
+                    <div className="main-img">
+                        <img src="/src/assets/images/men.png" alt="" />
+                    </div>
+                </div>
+                <div className="about-content">
+                    <div className="about-heading">
+                        <h1>About us</h1>
+                        <hr />
+                // added another hr to test git repo
+                        <hr />
+                        <p>Empowering IT Aspirants for a Bright Future</p>
+                    </div>
+                    <div className="about-para">
+                        <p>Established in 2021, AspiraSys is more than just an organization; it's a commitment to empower IT enthusiasts for a brighter and more prosperous future.</p>
+                    </div>
+                    <div className="about-btn">
+                        <Button bgcolor="#3E91CF" color="white" bordercolor="#3E91CF" hovercolor="#3E91CF" onClick={handleClick}>
+                            Know More
+                        </Button>
+                    </div>
+                </div>
             </div>
-            <div className="main-img">
-                <img src="/src/assets/images/men.png" alt="" />
-            </div>
-        </div>
-        <div className="about-content">
-            <div className="about-heading">
-                <h1>About us</h1>
-                <hr />
-                <p>Empowering IT Aspirants for a Bright Future</p>
-            </div>
-            <div className="about-para">
-                <p>Established in 2021, AspiraSys is more than just an organization; it's a commitment to empower IT enthusiasts for a brighter and more prosperous future.</p>
-            </div>
-            <div className="about-btn">
-            <Button bgcolor="#3E91CF" color="white" bordercolor="#3E91CF" hovercolor="#3E91CF" onClick={handleClick}>
-              Know More
-            </Button>
-            </div>
-        </div>
-      </div>
-    </Wrapper>
-  )
+        </Wrapper>
+    )
 }
 
 const Wrapper = styled.section`
